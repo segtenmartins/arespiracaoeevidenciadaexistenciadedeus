@@ -24,7 +24,8 @@
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-html { scroll-behavior: smooth; font-size: clamp(1.28rem, 2.8vw, 1.5rem); }
+html { scroll-behavior: smooth; font-size: 1.28rem; }
+body { max-width: 480px; margin: 0 auto; }
 
 body {
   font-family: 'EB Garamond', serif;
@@ -133,7 +134,7 @@ body {
 /* ÍNDICE */
 #indice {
   padding: 4rem 2rem;
-  max-width: 1100px; margin: 0 auto;
+  max-width: 100%; margin: 0 auto;
 }
 .indice-titulo {
   font-family: 'Cinzel Decorative', serif;
@@ -148,7 +149,7 @@ body {
 }
 .indice-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: 1fr;
   gap: 0.8rem;
 }
 .indice-btn {
@@ -191,7 +192,7 @@ body {
 /* SEÇÕES */
 .section {
   padding: 4rem 2rem;
-  max-width: 1100px; margin: 0 auto;
+  max-width: 100%; margin: 0 auto;
   opacity: 0; transform: translateY(30px);
   transition: opacity 0.7s ease, transform 0.7s ease;
 }
@@ -255,7 +256,7 @@ body {
   border-radius: 0 12px 12px 0;
   padding: 1.6rem 2rem;
   margin: 2rem auto;
-  max-width: 900px;
+  max-width: 100%;
   text-align: center;
 }
 .destaque-biblico p {
@@ -274,7 +275,7 @@ body {
 /* CARDS */
 .cards-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: 1fr;
   gap: 1.2rem; margin: 1.8rem 0;
 }
 .card {
@@ -374,7 +375,7 @@ tr:hover td { background: var(--fundo-card); }
 /* VOCABULÁRIO */
 .vocab-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: 1fr;
   gap: 1rem; margin: 1.8rem 0;
 }
 .vocab-item {
@@ -530,7 +531,7 @@ p:last-child { margin-bottom: 0; }
 <section id="hero">
   <span class="hero-simbolo">🕊️</span>
   <p class="hero-categoria">Teologia · Ciência · Filosofia</p>
-  <h1 class="hero-titulo">Respirar é evidência da existência de DEUS</h1>
+  <h1 class="hero-titulo">O Sopro e a Busca</h1>
   <p class="hero-subtitulo">Do instinto natural à presença de Deus — uma teologia da respiração do Gênesis ao Apocalipse</p>
   <p class="hero-autor">Pr. João Alves</p>
   <div class="hero-seta" onclick="irPara('indice')">↓</div>
@@ -541,12 +542,12 @@ p:last-child { margin-bottom: 0; }
   <h2 class="indice-titulo">Índice</h2>
   <div class="indice-linha"></div>
   <div class="indice-grid">
-    <button class="indice-btn" onclick="irPara('instinto')"><span class="indice-num">I</span> Instinto</button>
-    <button class="indice-btn" onclick="irPara('sopro')"><span class="indice-num">II</span> Gênesis 2:7</button>
-    <button class="indice-btn" onclick="irPara('respiracao')"><span class="indice-num">III</span> A Respiração</button>
-    <button class="indice-btn" onclick="irPara('ceus')"><span class="indice-num">IV</span> Os Três Céus</button>
-    <button class="indice-btn" onclick="irPara('estrelas')"><span class="indice-num">V</span> As Estrelas</button>
-    <button class="indice-btn" onclick="irPara('eternidade')"><span class="indice-num">VI</span> Apocalipse 21:23</button>
+    <button class="indice-btn" onclick="irPara('instinto')"><span class="indice-num">I</span> O Argumento do Instinto</button>
+    <button class="indice-btn" onclick="irPara('sopro')"><span class="indice-num">II</span> O Sopro Original — Gênesis 2:7</button>
+    <button class="indice-btn" onclick="irPara('respiracao')"><span class="indice-num">III</span> A Respiração como Metáfora</button>
+    <button class="indice-btn" onclick="irPara('ceus')"><span class="indice-num">IV</span> Os Três Céus e o Oxigênio</button>
+    <button class="indice-btn" onclick="irPara('estrelas')"><span class="indice-num">V</span> As Estrelas, Berçários do Oxigênio</button>
+    <button class="indice-btn" onclick="irPara('eternidade')"><span class="indice-num">VI</span> Apocalipse 21:23 — O Fim da Busca</button>
     <button class="indice-btn" onclick="irPara('arco')"><span class="indice-num">VII</span> O Arco Completo</button>
   </div>
 </section>
